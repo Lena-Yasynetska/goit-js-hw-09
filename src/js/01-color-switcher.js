@@ -9,12 +9,12 @@ function getRandomHexColor() {
   }
 
 btnStart.addEventListener('click', (element) => {
-    const initialColor = getRandomHexColor();
-    colorBody.style.backgroundColor = initialColor;
+  colorBody.style.backgroundColor = getRandomHexColor();
+    //colorBody.style.backgroundColor = initialColor;
 
     timerId = setInterval(() => {
-        const randomColor = getRandomHexColor();
-        colorBody.style.backgroundColor = randomColor;
+      colorBody.style.backgroundColor = getRandomHexColor();
+        //colorBody.style.backgroundColor = randomColor;
   }, 1000);
   element.target.setAttribute("disabled", true);
   btnStop.removeAttribute("disabled");
