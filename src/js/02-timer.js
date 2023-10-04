@@ -2,15 +2,14 @@ import flatpickr from "flatpickr";
 import "flatpickr/dist/flatpickr.min.css";
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 
-
 const btnStart = document.querySelector('[data-start]');
 const days = document.querySelector('[data-days]');
 const hours = document.querySelector('[data-hours]');
 const minutes = document.querySelector('[data-minutes]');
 const seconds = document.querySelector('[data-seconds]');
 const input = document.querySelector('#datetime-input');
-console.log(btnStart);
-console.log(minutes);
+// console.log(btnStart);
+// console.log(minutes);
 
 let countdownInterval; 
 btnStart.setAttribute("disabled", true);
@@ -20,6 +19,7 @@ const options = {
   time_24hr: true,
   defaultDate: new Date(),
   minuteIncrement: 1,
+
   onClose(selectedDates) {
     const selectedDate = selectedDates[0];
 
@@ -52,10 +52,10 @@ function startCountdown(ms) {
   countdownInterval = setInterval(() => {
     const { days, hours, minutes, seconds } = convertMs(ms);
 
-    tDays.textContent = addLeadingZero(days);
-    tHours.textContent = addLeadingZero(hours);
-    tMinutes.textContent = addLeadingZero(minutes);
-    tSeconds.textContent = addLeadingZero(seconds);
+    timeDays.textContent = addLeadingZero(days);
+    timeHours.textContent = addLeadingZero(hours);
+    timeMinutes.textContent = addLeadingZero(minutes);
+    timeSeconds.textContent = addLeadingZero(seconds);
 
     if (ms <= 0) {
       clearInterval(countdownInterval);

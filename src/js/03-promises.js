@@ -1,4 +1,5 @@
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
+//import { throttle }  from "lodash";
 
 const formRef = document.querySelector('.form');
 
