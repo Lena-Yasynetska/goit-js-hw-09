@@ -1,6 +1,6 @@
 import flatpickr from "flatpickr";
 import "flatpickr/dist/flatpickr.min.css";
-import { convertMs } from "./helpers/02-time";
+import { convertMs } from "../helpers/02-time";
 
 const timerDays = document.querySelector('[data-days]');
 const timerHours = document.querySelector('[data-hours]');
