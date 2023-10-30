@@ -35,7 +35,7 @@
 
 
 
-import throttle  from "lodash.throttle";
+// import throttle  from "lodash.throttle";
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 
 const userDate = {};
