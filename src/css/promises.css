@@ -1,13 +1,15 @@
 .form{
     display: flex;
+     /* flex-direction: column;  */
     flex-direction: flex;
     gap: 20px;
 }
     
-    .js-button{
-       display: inline-block;
-       width: 150px;
-       height: 40px;
-       border-radius: 10px;
-       border-color: blue;
-    }
+.js-button{
+    display: inline-block;
+    width: 150px;
+    height: 40px;
+    /* border-radius: 10px;
+    border-color: #3700ff; */
+}
+
