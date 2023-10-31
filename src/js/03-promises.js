@@ -4,8 +4,8 @@ import { Notify } from 'notiflix/build/notiflix-notify-aio';
 const userDate = {};
 
 const formEl = document.querySelector('.form');
-
-formEl.addEventListener('input', throttle(onInput, 500));
+// formEl.addEventListener('input', throttle(onInput, 500));
+// formEl.addEventListener('input', throttle(onInput, 500));
 formEl.addEventListener('submit', onSubmit);
 
 //-------function for submit button----------
