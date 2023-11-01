@@ -9,8 +9,22 @@
   </head>
   <body>
     <p><a href="index.html">Go back</a></p>
-  
-     <div class="js-button"> 
+    <form class="form">
+      <label>
+        First delay (ms)
+        <input type="number" name="delay" class="first-delay" required />
+      </label>
+      <label>
+        Delay step (ms)
+        <input type="number" name="step" class="delay-step" required />
+      </label>
+      <label>
+        Amount
+        <input type="number" name="amount" class="amount" required />
+      </label>
+      <button type="submit" class="submit-create">Create promises</button>
+    </form>
+     <!-- <div class="js-button"> 
     <form class="form">
      
       <label>
@@ -27,7 +41,7 @@
       </label>
       <button class="js-button" type="submit">Create promises</button>
     </form>
-   </div>
+   </div> -->
   
     <script src="js/03-promises.js" type="module"></script>
   </body>
